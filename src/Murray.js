@@ -40,7 +40,7 @@ export default function Murray() {
               </div>
             </div>
             <section>
-              <div className="container2">
+              <div className="container">
                 <div className={Murray.container}>
                   <div className="phones-aimation">
                     <div className="for-phones">
