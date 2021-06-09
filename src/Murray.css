@@ -168,22 +168,23 @@
   font-weight: 400;
   line-height: 38px;
   margin-top: 7px;
-  margin: 0px 30px;
+  margin: 10px 30px 0px 30px;
+
 }
 .meal-planning h6 {
   font-size: 22px;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
-  margin-top: 20px;
-  margin-bottom: 28px;
+  margin-top: 19px;
+  margin-bottom: 19px;
 }
 .email1 input[type="text"] {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border: none;
   padding: 14px 34px;
-  width: 47%;
+  width: 54%;
   font-size: 11px;
   /* margin-left: 24px; */
   outline: none;
@@ -230,7 +231,7 @@
   font-size: 22px;
   font-weight: 400;
   color: #414141;
-  margin-top: 24px;
+  margin-top: 12px;
 }
 .chicken {
   box-shadow: none;
@@ -249,11 +250,11 @@
 }
 .chicken img{
   box-shadow: 0px 0px 19px 0px #6f6f6f1a;
-  margin: 10px 1px;
+  /* margin: 10px 1px; */
   width: 287px;
   border-radius: 20px;
-  margin-top: 70px;
-
+  margin-top: 81px;
+  margin-bottom: 26px;
 }
 .frame-div {
   /* display: flex; */
@@ -284,32 +285,33 @@
 .frame-div {
   /* gap: 123px; */
   margin-top: 87px;
-  margin:0px 30px;
+  /* margin:0px 30px; */
   overflow-x: clip;
 }
 .frame-div2 {
   /* gap: 123px; */
   margin-top: 87px;
-  margin:0px 30px;
+  /* margin:0px 30px; */
   overflow-x: clip;
 }
 .frame-div img {
   box-shadow: 0px 0px 16px 0px #6f6f6f1a;
   border-radius: 20px;
-  width:287px;
-  /* margin-top: 70px; */
+  width: 342px;
+    margin-top: 90px;
 }
 .frame-div2 img {
   box-shadow: 0px 0px 16px 0px #6f6f6f1a;
   border-radius: 20px;
-  width:287px;
+  width: 342px;
+  margin-top: 90px; 
  
 }
 .contain {
   text-align: center;
   width: 86%;
   margin: auto;
-  margin-top: 39px;
+  margin-top: 90px;
 }
 .contain h1 {
   font-size: 30px;
@@ -320,7 +322,7 @@
   font-size: 18px;
   font-weight: 400;
   color: #9566a0;
-  margin-top: 28px;
+  margin-top: 17px;
 }
 .ellipses {
   width: 105px;
@@ -338,24 +340,24 @@
   );
 
   text-align: center;
-  padding-top: 110px;
+  padding-top: 71px;
   color: white;
   padding-bottom: 80px;
 }
 .last-div h1 {
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 600;
   color: white;
 }
 .last-div p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: white;
-  margin-top: 3px;
-  margin-bottom: 31px;
+  margin-top: 9px;
+  margin-bottom: 25px;
 }
 .email input[type="text"] {
-  width: 23%;
+  width: 39%;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border: none;
@@ -376,21 +378,29 @@
 }
 .last-div img {
   width: 86px;
-  margin-top: 79px;
+  margin-top: 60px;
 }
 .last-div h2 {
   font-weight: 500;
   font-size: 26px;
+  margin-top: 13px;
 }
 .last-div h5 {
   font-size: 11px;
   font-weight: 300;
   color: #a19393;
-  margin-top: 32px;
+  margin-top: 26px;
 }
+
 @media screen and (min-width: 357px) {
   .carousel .slider-wrapper.axis-horizontal .slider{
     height: 505px;
+  }
+  .frame-div{
+    margin: 0px 30px;
+  }
+  .frame-div2{
+    margin: 0px 30px;
   }
 }
 @media screen and (min-width: 600px) {
