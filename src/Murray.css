@@ -4,6 +4,9 @@
   margin: 0;
   font-family: "Poppins";
 }
+html{
+  scroll-behavior:smooth;
+}
 
 .last{
   text-align:center;
@@ -136,12 +139,12 @@
   display: flex;
 }
 .for-phones{
-  width: 350px;
+  width: 310px;
     margin-top: 10px;
     margin: auto;
 }
 .for-phones img{
-  width: 342px;
+  width: 303px;
 }
 /* .container {
   width: 88%;
@@ -168,7 +171,7 @@
   font-weight: 400;
   line-height: 38px;
   margin-top: 7px;
-  margin: 10px 30px 0px 30px;
+  margin: 10px 19px 0px 19px;
 
 }
 .meal-planning h6 {
@@ -183,9 +186,9 @@
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border: none;
-  padding: 14px 34px;
-  width: 54%;
-  font-size: 11px;
+  padding: 11px 34px;
+  width: 43%;
+  font-size: 14px;
   /* margin-left: 24px; */
   outline: none;
 }
@@ -193,8 +196,8 @@
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border: none;
-  padding: 14px 30px;
-    font-size: 11px;
+  padding: 11px 30px;
+    font-size: 14px;
   font-weight: 600;
   background: #35c680;
   color: white;
@@ -297,13 +300,13 @@
 .frame-div img {
   box-shadow: 0px 0px 16px 0px #6f6f6f1a;
   border-radius: 20px;
-  width: 342px;
+  width: 287px;
     margin-top: 90px;
 }
 .frame-div2 img {
   box-shadow: 0px 0px 16px 0px #6f6f6f1a;
   border-radius: 20px;
-  width: 342px;
+  width: 287px;
   margin-top: 90px; 
  
 }
@@ -389,6 +392,8 @@
   font-size: 11px;
   font-weight: 300;
   color: #a19393;
+  
+  
   margin-top: 26px;
 }
 
@@ -401,6 +406,21 @@
   }
   .frame-div2{
     margin: 0px 30px;
+  }
+}
+@media screen and (min-width:411px){
+  .email1 input[type="text"]{
+    width: 52%;
+  }
+}
+@media screen and (min-width:470px){
+  .email1 input[type="text"]{
+    width: 49%;
+  }
+}
+@media screen and (min-width:562px){
+  .email1 input[type="text"]{
+    width: 37%;
   }
 }
 @media screen and (min-width: 600px) {
@@ -480,6 +500,11 @@
   width: 654px;
 }
 }
+@media screen and (min-width: 1123px ){
+  .email1 input[type="text"] {
+    width: 25%;
+  } 
+} 
  @media screen and (min-width: 1264px ){
   .email1 input[type="text"] {
     margin-left: 0px;

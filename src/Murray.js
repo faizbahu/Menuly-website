@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useSpring, animated, to } from "@react-spring/web";
 import { useGesture } from "react-use-gesture";
+import useWindowSize from "./Windowsize";
 import "./Murray.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,10 +11,8 @@ import frame2 from "./images/Frame 2.png";
 import frame1 from "./images/Frame 1.png";
 import biglogo from "./images/biglogo.png";
 import card from "./images/card.png";
-
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 
 export default function Murray() {
   useEffect(() => {
@@ -22,7 +21,7 @@ export default function Murray() {
     });
     AOS.refresh();
   }, []);
-
+  const { width } = useWindowSize();
   return (
     <div>
       <div className="container-for-body">
@@ -35,18 +34,20 @@ export default function Murray() {
                   <h3>MENULY</h3>
                 </div>
                 <div className="button-early">
-                  <button>Get Early Access</button>
+                  <a href={width > 1280 ? "#move" : "#input"}>
+                    <button>Get Early Access</button>
+                  </a>
                 </div>
               </div>
             </div>
             <section>
               <div className="container">
                 <div className={Murray.container}>
-                  <div className="phones-aimation">
+                  <div id="move" className="phones-aimation">
                     <div className="for-phones">
-                      <img src={phones}/>
+                      <img src={phones} />
                     </div>
-                    <div className="padding-first">
+                    <div id="input" className="padding-first">
                       <div className="meal-planning">
                         <h2>Meal planning made easy</h2>
                         <p>
@@ -56,7 +57,7 @@ export default function Murray() {
                         </p>
                         <h6>Register for early access before we launch</h6>
                       </div>
-                      <div className="email1">
+                      <div  className="email1">
                         <input
                           type="text"
                           className="enter"
