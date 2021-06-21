@@ -21,7 +21,7 @@ export default function Murray() {
     email1: "",
     email2: "",
   });
-
+  const {width,height}=useWindowSize
   const [isError, setIsError] = useState({
     error1: false,
     error2: false,
@@ -173,11 +173,11 @@ export default function Murray() {
         <section>
           <div className="container">
             <div className="portion-div">
-              <div data-aos="fade-left" className="chicken">
+              <div data-aos="fade-down" className="chicken">
                 <img src={card} />
               </div>
 
-              <div data-aos="fade-right" className="discover">
+              <div data-aos="fade-down" className="discover">
                 <h3>Discover new favourites every week</h3>
                 <p>
                   Quickly swipe through weekly dish inspiration and simply ❤️ your fav’s, teaching Menuly what you love,
@@ -189,11 +189,11 @@ export default function Murray() {
         </section>
         <section>
           <div className="container">
-            <div data-aos="fade-right" className="frame-div">
+            <div data-aos="fade-down" className="frame-div">
               <div>
                 <img src={frame2} />
               </div>
-              <div data-aos="fade-left" className="meals">
+              <div data-aos="fade-down" className="meals">
                 <h1>Make meal plans in an instant</h1>
                 <p>
                   See the family favourites, drag & drop to create a weekly plan in seconds, then tap to share with your
@@ -206,11 +206,11 @@ export default function Murray() {
         <section>
           <div className="container">
             <div className="frame-div2">
-              <div data-aos="fade-left">
+              <div data-aos="fade-down">
                 <img src={frame1} />
               </div>
 
-              <div data-aos="fade-right" className="meals">
+              <div data-aos="fade-down" className="meals">
                 <h1>Streamline dinner planning with your Helper</h1>
                 <p>
                   Menuly keeps track of family favourites, matches with what your helper can make, generates a meal plan
@@ -221,6 +221,7 @@ export default function Murray() {
           </div>
         </section>
         <section className="carousel__container" style={{ position: "relative" }}>
+          <div className="container">
           <Carousel
             autoplay={true}
             infiniteLoop
@@ -231,27 +232,24 @@ export default function Murray() {
           >
             <div className="contain">
               <h1>
-                “Menuly has changed my life and made meal planning a breeze in my household! I highly recommend this app
-                to anyone.”
+                “Menuly makes it incredibly fast and easy to plan a week of meals!”
               </h1>
-              <p>Aron A. - Beta user</p>
+              <p>Aron A. - Stephanie</p>
             </div>
             <div className="contain">
               <h1>
-                “Menuly has changed my life and made meal planning a breeze in my household! I highly recommend this app
-                to anyone.”
+                “This app is a live-saver! Saves us hours every week.”
               </h1>
-              <p>Aron A. - Beta user</p>
+              <p>Aron A. - Cassandra</p>
             </div>
             <div className="contain">
               <h1>
-                “Menuly has changed my life and made meal planning a breeze in my household! I highly recommend this app
-                to anyone.”
+                “I no longer hear “What’s for dinner?” - it’s all in the app for the family to see!”
               </h1>
-              <p>Aron A. - Beta user</p>
+              <p>Aron A. - Ale</p>
             </div>
           </Carousel>
-
+          </div>
           {/* <div className="contain">
             <h1>
               “Menuly has changed my life and made meal planning a breeze in my
