@@ -13,7 +13,7 @@ html{
   cursor: pointer;
 }
 .carousel .slider-wrapper.axis-horizontal .slider{
-  height: 634px;
+  height: 359px;
 }
 
 .carousel .control-dots .dot{
@@ -167,7 +167,7 @@ html{
   margin-top: 27px;
 }
 .meal-planning p {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 38px;
   margin-top: 7px;
@@ -175,7 +175,7 @@ html{
 
 }
 .meal-planning h6 {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -186,7 +186,7 @@ html{
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border: none;
-  padding: 11px 34px;
+  padding: 11px 23px;
   width: 43%;
   font-size: 14px;
   /* margin-left: 24px; */
@@ -225,17 +225,18 @@ html{
     margin-bottom: 80px;
 }
 .discover h3 {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 42px;
   color: #2f0842;
 }
 .discover p {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   color: #414141;
   margin-top: 12px;
 }
+
 .chicken {
   box-shadow: none;
   /* text-align: center; */
@@ -256,7 +257,7 @@ html{
   /* margin: 10px 1px; */
   width: 287px;
   border-radius: 20px;
-  margin-top: 81px;
+  margin-top: 80px;
   margin-bottom: 26px;
 }
 .frame-div {
@@ -275,12 +276,12 @@ html{
   text-align: center;
 }
 .meals h1 {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   color: #2f0842;
 }
 .meals p {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   color: #414141;
   margin-top: 20px;
@@ -317,7 +318,7 @@ html{
   margin-top: 90px;
 }
 .contain h1 {
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 600;
   color: #2f0842;
 }
@@ -360,20 +361,21 @@ html{
   margin-bottom: 25px;
 }
 .email input[type="text"] {
-  width: 39%;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border: none;
-  padding: 14px 31px;
-  font-size: 15px;
+  padding: 11px 23px;
+  width: 43%;
+  font-size: 14px;
+  /* margin-left: 24px; */
   outline: none;
 }
 .email button {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border: none;
-  padding: 14px 34px;
-  font-size: 15px;
+  padding: 11px 30px;
+    font-size: 14px;
   font-weight: 600;
   background: #35c680;
   color: white;
@@ -389,17 +391,15 @@ html{
   margin-top: 13px;
 }
 .last-div h5 {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 300;
   color: #a19393;
-  
-  
   margin-top: 26px;
 }
 
 @media screen and (min-width: 357px) {
   .carousel .slider-wrapper.axis-horizontal .slider{
-    height: 505px;
+    height: 334px;
   }
   .frame-div{
     margin: 0px 30px;
@@ -424,6 +424,27 @@ html{
   }
 }
 @media screen and (min-width: 600px) {
+  .meal-planning h6{
+    font-size: 23px;
+  }
+  .meal-planning p{
+    font-size: 22px;
+  }
+  .meals p{
+    font-size:22px;
+  }
+  .meals h1{
+    font-size:32px;
+  }
+  .discover h3{
+    font-size:32px;
+  }
+  .discover p{
+    font-size:22px;
+  }
+  .contain h1{
+    font-size:30px;
+  }
   .button-early button{
     padding: 17px 45px;
   }
@@ -459,7 +480,10 @@ html{
     width: 427px;
   }
   .carousel .slider-wrapper.axis-horizontal .slider{
-    height: 364px;
+    height: 417px;
+  }
+  .last-div h5 {
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 885px ){
@@ -479,6 +503,12 @@ html{
 }
   .for-phones img {
     width: 604px;
+}
+.carousel .slider-wrapper.axis-horizontal .slider{
+  height: 378px;
+}
+.email input[type="text"]{
+  width: 33%;
 }
 }
 @media screen and (min-width: 946px ){
@@ -504,6 +534,9 @@ html{
   .email1 input[type="text"] {
     width: 25%;
   } 
+  .carousel .slider-wrapper.axis-horizontal .slider{
+    height: 359px;
+  }
 } 
  @media screen and (min-width: 1264px ){
   .email1 input[type="text"] {
