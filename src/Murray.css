@@ -129,22 +129,17 @@ html{
   background-position: center center;
   margin: 0vw 0;
 }
-
-
-
-
-
 .image{
   justify-content: center;
   display: flex;
 }
 .for-phones{
-  width: 310px;
+  width: 350px;
     margin-top: 10px;
     margin: auto;
 }
 .for-phones img{
-  width: 303px;
+  width: 342px;
 }
 /* .container {
   width: 88%;
@@ -182,6 +177,20 @@ html{
   margin-top: 19px;
   margin-bottom: 19px;
 }
+
+.email1 {
+  display: flex;
+  padding: 0 21px;
+  justify-content: center;
+}
+
+.email__error {
+  text-align: center !important;
+  padding-left: 33px !important;
+  padding-top: 7px !important;
+  font-size: 13px !important;
+  color: #ce1c40 !important;
+}
 .email1 input[type="text"] {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -189,7 +198,7 @@ html{
   padding: 11px 23px;
   width: 43%;
   font-size: 14px;
-  /* margin-left: 24px; */
+  margin-left: 0px;
   outline: none;
 }
 input::placeholder{
@@ -722,7 +731,7 @@ input:focus::placeholder{
     padding: 14px 31px;
     width: 58%;
     font-size: 15px;
-    margin-left: 24px;
+    /* margin-left: 24px; */
     outline: none;
   }
   .email1 button {

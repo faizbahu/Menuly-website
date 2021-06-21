@@ -223,12 +223,12 @@ export default function Murray() {
         <section className="carousel__container" style={{ position: "relative" }}>
           <div className="container">
           <Carousel
-            autoplay={true}
-            infiniteLoop
+            // autoplay={true}
+            // infiniteLoop
             showIndicators={true}
             showStatus={false}
-            interval={1000}
-            showThumbs={true}
+            // interval={1000}
+            // showThumbs={true}
           >
             <div className="contain">
               <h1>
