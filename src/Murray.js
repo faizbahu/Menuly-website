@@ -141,16 +141,17 @@ export default function Murray() {
                           Tired of coming up with meal ideas every week? Menuly solves the “What’s for dinner?” problem
                           for families with helpers in one easy-to-use app.
                         </p>
-                        <h6>Register for early access before we launch</h6>
+                        <h6 className={`${success.email1 ? "hide" : ""}`}>Register for early access before we launch</h6>
                       </div>
-                      <div  className="email1">
+                      
+                      <div  className={`${success.email1 ? "hide" : "email1"}`}>
                         <input
                           type="text"
-                          className="enter"
+                          className={`${isError.error1 ? "email__error" : "enter"}`}
                           placeholder="Enter email address"
                           name="email1"
                           value={userEmail.email1}
-                          onChange={handleOnChange}
+                          onChange={handleOnChange} 
                         />
                         <button disabled={success.email1 && true} onClick={() => handleSubmit(1)}>
                           {isLoading.email1 ? (
@@ -162,7 +163,11 @@ export default function Murray() {
                           )}
                         </button>
                       </div>
-                      {isError.error1 && <p className="email__error">Enter valid email!</p>}
+                      <div className={`${success.email1 ? "show" : "hide"}`}>
+            <IoCheckmarkSharp className="tick-mark" />
+            <h3 className="regestering">Thank you for registering.</h3>
+            </div>
+                      {/* {isError.error1 && <p className="email__error">Enter valid email!</p>} */}
                     </div>
                   </div>
                 </div>
@@ -266,11 +271,11 @@ export default function Murray() {
         <section>
           <div className="last-div">
             <h1>Solve the “What's for dinner?” problem</h1>
-            <p>Register below for early access</p>
-            <div className="email">
+            <p className={`${success.email2 ? "hide" : ""}`}>Register below for early access</p>
+            <div className={`${success.email2 ? "hide" : "email"}`}>
               <input
                 type="text"
-                className="enter1"
+                className={`${isError.error2 ? "email__error" : "enter1"}`}
                 placeholder="Enter email address"
                 name="email2"
                 value={userEmail.email2}
@@ -286,7 +291,12 @@ export default function Murray() {
                 )}
               </button>
             </div>
-            {isError.error2 && <p className="email__error">Enter valid email!</p>}
+            <div className={`${success.email2 ? "show" : "hide"}`}>
+            <IoCheckmarkSharp className="tick-mark" />
+            <h3 className="regestering">Thank you for registering</h3>
+            </div>
+            
+            {/* {isError.error2 && <p className="email__error">Enter valid email!</p>} */}
             <img src={biglogo} />
             <h2>MENULY</h2>
             <h5>Copyright © 2021 HYPR Digital Pte Ltd. All rights reserved.</h5>

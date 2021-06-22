@@ -156,21 +156,37 @@ html{
   justify-content: center;
 }
 .email__error {
-  text-align: center !important;
-  padding-left: 33px !important;
-  padding-top: 7px !important;
-  font-size: 13px !important;
-  color: #ce1c40 !important;
+  border: 3px solid #ff0000a3 !important;
+    background: #d07b7bfa !important;
+    color:white;
+}
+.hide{
+  display:none;
+}
+.tick-mark{
+  background: #35c680;
+  border-radius: 50%;
+  font-size: 27px;
+    padding: 23px;
+    margin-top: 22px;
+}
+.regestering{
+  /* margin-top: 12px; */
+  font-weight: 500;
+  font-size: 19px;
 }
 .email1 input[type="text"] {
+
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
-  border: none;
+  border:3px solid white;
   padding: 11px 23px;
   width: 44%;
   font-size: 14px;
+  
   /* margin-left: 0px; */
   outline: none;
+ 
 }
 input::placeholder{
   color: grey;
@@ -336,7 +352,7 @@ input:focus::placeholder{
 .email input[type="text"] {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
-  border: none;
+  border: 3px solid white;
   padding: 11px 23px;
   width: 43%;
   font-size: 14px;
@@ -402,6 +418,16 @@ input:focus::placeholder{
   }
 
 @media screen and (min-width: 357px) {
+  .tick-mark{
+    background: #35c680;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 29px;
+    margin-top: 49px;
+  }
+  .regestering{
+    font-size: 22px;
+  }
   .carousel .slider-wrapper.axis-horizontal .slider{
     height: 281px;
   }
@@ -428,6 +454,16 @@ input:focus::placeholder{
   }
 }
 @media screen and (min-width: 600px) {
+  .tick-mark{
+    background: #35c680;
+    border-radius: 50%;
+    font-size: 37px;
+    padding: 34px;
+    margin-top: 49px;
+  }
+  .regestering{
+    font-size: 28px;
+  }
   .meal-planning h6{
     font-size: 23px;
   }
@@ -531,8 +567,16 @@ input:focus::placeholder{
   .for-phones {
     width: 642px;
 }
+
 .for-phones img {
   width: 654px;
+}
+.tick-mark{
+  background: #35c680;
+  border-radius: 50%;
+  font-size: 37px;
+  padding: 34px;
+  margin-top: 49px;
 }
 }
 @media screen and (min-width: 1123px ){
@@ -542,6 +586,7 @@ input:focus::placeholder{
   .carousel .slider-wrapper.axis-horizontal .slider{
     height: 359px;
   }
+ 
 }
 @media screen and (min-width: 1024px) {
   .carousel .slider-wrapper.axis-horizontal .slider{
@@ -690,11 +735,17 @@ input:focus::placeholder{
     margin-top: 38px;
     margin-bottom: 6px;
   }
- 
+  .tick-mark{
+    font-size: 43px;
+  }
+  .regestering{
+  
+    font-size: 25px;
+  }
   .email1 input[type="text"] {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    border: none;
+    border:3px solid white;
     padding: 14px 31px;
     width: 62%;
     font-size: 15px;
@@ -715,10 +766,14 @@ input:focus::placeholder{
     text-align:left;
   }
   .padding-first {
-    display: flex;
+    /* display: flex; */
+    transform:translateY(70px);
     flex-direction: column;
     justify-content: center;
     margin-bottom: 9%;
+  }
+  .show{
+    /* margin-top: 16px; */
   }
   .portion-div {
     display: flex;
@@ -845,7 +900,7 @@ input:focus::placeholder{
     width: 23%;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    border: none;
+    border:3px solid white;
     padding: 14px 31px;
     font-size: 15px;
     outline: none;
@@ -896,6 +951,18 @@ input:focus::placeholder{
     background: #2F0842 !important;
     opacity: 1 !important;
     box-shadow: 0px 0px !important;
+  }
+  .tick-mark{
+    background: #35c680;
+    border-radius: 50%;
+    font-size: 57px;
+      padding: 34px;
+    /* margin-top: 18px; */
+  }
+  .regestering{
+    /* margin-top: 12px; */
+    font-weight: 500;
+    font-size: 30px;
   }
   .card {
     margin-right: 40px;
@@ -1024,10 +1091,10 @@ input:focus::placeholder{
   .email1 input[type="text"] {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    border: none;
     padding: 14px 31px;
     width: 62%;
     font-size: 15px;
+    border: 3px solid white ;
     /* margin-left: 24px; */
     outline: none;
   }
@@ -1046,7 +1113,7 @@ input:focus::placeholder{
     text-align:left;
   }
   .padding-first {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     margin-bottom: 9%;
@@ -1170,7 +1237,7 @@ input:focus::placeholder{
     width: 23%;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    border: none;
+    border:3px solid white;
     padding: 14px 31px;
     font-size: 15px;
     outline: none;
