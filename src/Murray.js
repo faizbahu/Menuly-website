@@ -227,7 +227,7 @@ export default function Murray() {
             // infiniteLoop
             showIndicators={true}
             showStatus={false}
-            // interval={1000}
+            interval={100000}
             // showThumbs={true}
           >
             <div className="contain">

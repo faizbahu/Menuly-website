@@ -12,10 +12,13 @@ html{
   text-align:center;
   cursor: pointer;
 }
-.carousel .slider-wrapper.axis-horizontal .slider{
-  height: 359px;
+.carousel__container{
+  height: auto;
+  margin-bottom: 65px;
 }
-
+.carousel .slider-wrapper.axis-horizontal .slider{
+  height: 302px;
+}
 .carousel .control-dots .dot{
   width: 12px !important;
   height: 12px !important;
@@ -37,8 +40,6 @@ html{
 .circle{
   width: 12px;
   height: 12px;
-  /* background: black; */
-  /* background: #2F0842; */
   border: 3px solid #2F0842;
   border-radius: 41px;
 }
@@ -70,7 +71,6 @@ html{
   font-size: 23px;
   font-weight: 500;
   color: white;
-  
 }
 .button-early {
   display: flex;
@@ -88,13 +88,10 @@ html{
   cursor: pointer;
 }
 .phones-aimation {
-  /* display: flex; */
   margin-top: 8%;
   color: white;
   padding-bottom: 8%;
 }
-
-
 .card {
   display: none;
   position: relative;
@@ -112,17 +109,6 @@ html{
     background: url("./images/Group\ 236\(1\).png");
     background-repeat: no-repeat;
 }
-
-.card:hover {
-  /* box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4); */
-}
-/* 
-.card > div {
-  will-change: transform;
-  height: 100%;
-  margin: 0vw 0;
-} */
-
 .card > div > * {
   height: 100%;
   background-size: cover;
@@ -135,25 +121,11 @@ html{
 }
 .for-phones{
   width: 350px;
-    margin-top: 10px;
-    margin: auto;
+  margin-top: 10px;
+  margin: auto;
 }
 .for-phones img{
   width: 342px;
-}
-/* .container {
-  width: 88%;
-  margin: auto;
-  margin-left: 9%;
-  overflow-x: clip;
-} */
-/* .container2 {
-  width: 90%;
-  margin: auto;
-  margin-left: 7%;
-} */
-.meal-planning {
-  /* padding: 24px; */
 }
 .meal-planning h2 {
   font-size: 24px;
@@ -166,8 +138,7 @@ html{
   font-weight: 400;
   line-height: 38px;
   margin-top: 7px;
-  margin: 10px 19px 0px 19px;
-
+  margin: 10px 30px 0px 19px;
 }
 .meal-planning h6 {
   font-size: 16px;
@@ -177,13 +148,11 @@ html{
   margin-top: 19px;
   margin-bottom: 19px;
 }
-
 .email1 {
   display: flex;
-  padding: 0 21px;
-  justify-content: center;
+  padding: 0 24px;
+  justify-content: start;
 }
-
 .email__error {
   text-align: center !important;
   padding-left: 33px !important;
@@ -198,7 +167,7 @@ html{
   padding: 11px 23px;
   width: 43%;
   font-size: 14px;
-  margin-left: 0px;
+  /* margin-left: 0px; */
   outline: none;
 }
 input::placeholder{
@@ -207,38 +176,30 @@ input::placeholder{
 input:focus::placeholder{
   color:rgb(182, 174, 174);
 }
-
 .email1 button {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border: none;
-  padding: 11px 30px;
-    font-size: 14px;
+  padding: 0px 30px;
+  font-size: 14px;
   font-weight: 600;
   background: #35c680;
   color: white;
   cursor: pointer;
 }
 .padding-first {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   margin-bottom: 9%;
   text-align: center;
 }
 .portion-div {
-  /* display: flex; */
   gap: 86px;
   overflow-x: clip;
   margin: 0px 30px;
 }
 .discover {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   margin-top: 26px;
-    text-align: center;
-    margin-bottom: 0px;
+  text-align: center;
+  margin-bottom: 0px;
 }
 .discover h3 {
   font-size: 22px;
@@ -252,36 +213,24 @@ input:focus::placeholder{
   color: #414141;
   margin-top: 12px;
 }
-
 .chicken {
   box-shadow: none;
-  /* text-align: center; */
-  /* padding: 85px;
-  padding: 16px 85px; */
-  /* border-radius: 20px;
-  padding-top: 40px; */
-  /* margin-top: -57px; */
   background: white;
-  /* padding-bottom: 37px; */
-  /* margin: 0px 56px; */
   display: flex;
-    justify-content: center;
+   justify-content: center;
     
 }
 .chicken img{
   box-shadow: 0px 0px 19px 0px #6f6f6f1a;
-  /* margin: 10px 1px; */
   width: 287px;
   border-radius: 20px;
   margin-top: 80px;
   margin-bottom: 0px;
 }
 .frame-div {
-  /* display: flex; */
   text-align: center;
 }
 .frame-div2 {
-  /* display: flex; */
   text-align: center;
 }
 .meals {
@@ -303,15 +252,11 @@ input:focus::placeholder{
   margin-top: 20px;
 }
 .frame-div {
-  /* gap: 123px; */
   margin-top: 87px;
-  /* margin:0px 30px; */
   overflow-x: clip;
 }
 .frame-div2 {
-  /* gap: 123px; */
   margin-top: 87px;
-  /* margin:0px 30px; */
   overflow-x: clip;
 }
 .frame-div img {
@@ -325,7 +270,6 @@ input:focus::placeholder{
   border-radius: 20px;
   width: 287px;
   margin-top: 90px; 
- 
 }
 .contain {
   text-align: center;
@@ -376,6 +320,10 @@ input:focus::placeholder{
   margin-top: 9px;
   margin-bottom: 25px;
 }
+.email{
+  display: flex;
+  justify-content:center;
+}
 .email input[type="text"] {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -383,15 +331,14 @@ input:focus::placeholder{
   padding: 11px 23px;
   width: 43%;
   font-size: 14px;
-  /* margin-left: 24px; */
   outline: none;
 }
 .email button {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border: none;
-  padding: 11px 30px;
-    font-size: 14px;
+  padding: 0px 30px;
+  font-size: 14px;
   font-weight: 600;
   background: #35c680;
   color: white;
@@ -415,7 +362,7 @@ input:focus::placeholder{
 
 @media screen and (min-width: 357px) {
   .carousel .slider-wrapper.axis-horizontal .slider{
-    height: 334px;
+    height: 281px;
   }
   .frame-div{
     margin: 0px 30px;
@@ -481,7 +428,6 @@ input:focus::placeholder{
     color: white;
   }
   .chicken{
-    /* box-shadow: 0px 0px 19px 0px #6f6f6f1a; */
     margin: 0px 70px;
   }
   .chicken img{
@@ -496,7 +442,7 @@ input:focus::placeholder{
     width: 427px;
   }
   .carousel .slider-wrapper.axis-horizontal .slider{
-    height: 417px;
+    height: 343px;
   }
   .last-div h5 {
     font-size: 11px;
@@ -511,7 +457,6 @@ input:focus::placeholder{
     width: 484px;
   }
   .frame-div2 img{
-   
     width: 484px;
   }
   .for-phones {
@@ -521,7 +466,7 @@ input:focus::placeholder{
     width: 604px;
 }
 .carousel .slider-wrapper.axis-horizontal .slider{
-  height: 378px;
+  height: 316px;
 }
 .email input[type="text"]{
   width: 33%;
@@ -532,7 +477,6 @@ input:focus::placeholder{
     width: 644px;
   }
   .frame-div img{
-   
     width: 644px;
   }
   .frame-div2 img{
@@ -555,9 +499,8 @@ input:focus::placeholder{
   }
 }
 @media screen and (min-width: 1024px) {
-
   .carousel .slider-wrapper.axis-horizontal .slider{
-    height: 406px;
+    height: 384px;
   }
   .carousel .control-dots .dot{
     width: 12px !important;
@@ -574,7 +517,6 @@ input:focus::placeholder{
     opacity: 1 !important;
     box-shadow: 0px 0px !important;
   }
- 
   .card {
     margin-right: 40px;
     display:block;
@@ -582,36 +524,21 @@ input:focus::placeholder{
       width: 610px;
       height: 690px;
       background: grey;
-      /* border-radius: 5px; */
-      /* box-shadow: 0px 10px 30px -5px rgb(0 0 0 / 30%); */
-      /* transition: box-shadow 0.5s, opacity 0.5s; */
       will-change: transform;
-      /* border: 10px solid white; */
       cursor: grab;
-      /* overflow: hidden; */
-      /* touch-action: none; */
-      /* background: url("./images/Group\ 236\(1\).png"); */
       background-repeat: no-repeat;
   }
-  
-  .card:hover {
-    /* box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4); */
-  }
-  
   .card > div {
     will-change: transform;
     height: 100%;
     margin: 0vw 0;
   }
-  
   .card > div > * {
     height: 100%;
     background-size: cover;
     background-position: center center;
     margin: 0vw 0;
   }
-  
-
   .chicken img{
     margin-top: -50px;
     width: 484px;
@@ -680,22 +607,14 @@ input:focus::placeholder{
   .for-phones img{
     width: 464px;
   }
-  /* .image img {
-    display: none;
-    width: 625px;
-  } */
   .container {
-    /* width: 88%; */
     margin: auto;
-    /* margin-left: 9%; */
     overflow-x: clip;
     width: 982px;
   }
   .container2 {
     width: 1261px;
     margin: auto;
-    /* margin-left: 7%; */
-    
   }
   .meal-planning {
     padding: 24px;
@@ -712,33 +631,31 @@ input:focus::placeholder{
     font-weight: 400;
     line-height: 38px;
     margin-top: 29px;
-    /* margin:0px; */
     margin-left: 0px;
   }
   .meal-planning h6 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0em;
     margin-top: 38px;
-    margin-bottom: 26px;
-
+    margin-bottom: 6px;
   }
+ 
   .email1 input[type="text"] {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     border: none;
     padding: 14px 31px;
-    width: 58%;
+    width: 62%;
     font-size: 15px;
-    /* margin-left: 24px; */
     outline: none;
   }
   .email1 button {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border: none;
-    padding: 14px 34px;
+    /* padding: 14px 34px; */
     font-size: 15px;
     font-weight: 600;
     background: #35c680;
@@ -781,15 +698,9 @@ input:focus::placeholder{
     margin-top: 24px;
   }
   .chicken {
-    /* box-shadow: 0px 0px 19px 0px #6f6f6f1a; */
     text-align: center;
-   
-    
     border-radius: 20px;
-   
-    /* margin-top: -57px; */
     background: white;
-   
     margin: 0px 15px;
   }
   .frame-div {
@@ -807,7 +718,6 @@ input:focus::placeholder{
     justify-content: center;
     text-align: left;
     overflow-x: clip;
-    /* margin: 70px 43px; */
     margin-left:0px;
   }
   .meals h1 {
@@ -823,7 +733,6 @@ input:focus::placeholder{
   }
   .frame-div {
     gap: 106px;
-    /* margin-top: 127px; */
     margin: 0px;
   }
   .frame-div img {
@@ -864,7 +773,6 @@ input:focus::placeholder{
       #430d51 0%,
       #2f0842 100%
     );
-
     text-align: center;
     padding-top: 110px;
     color: white;
@@ -895,7 +803,7 @@ input:focus::placeholder{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border: none;
-    padding: 14px 34px;
+    padding: 0px 38px;
     font-size: 15px;
     font-weight: 600;
     background: #35c680;
@@ -907,9 +815,10 @@ input:focus::placeholder{
     margin-top: 80px;
   }
   .last-div h2 {
-    font-weight: 500;
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 28px;
     margin-top: 17px;
+    letter-spacing: 2px;
   }
   .last-div h5 {
     font-size: 11px;
@@ -918,10 +827,9 @@ input:focus::placeholder{
     margin-top: 36px;
   }
 }
- 
 @media screen and (min-width: 1264px ){
   .carousel .slider-wrapper.axis-horizontal .slider{
-    height: 406px;
+    height: 381px;
   }
   .carousel .control-dots .dot{
     width: 12px !important;
@@ -938,44 +846,28 @@ input:focus::placeholder{
     opacity: 1 !important;
     box-shadow: 0px 0px !important;
   }
- 
   .card {
     margin-right: 40px;
     display:block;
     position: relative;
-      width: 610px;
-      height: 690px;
-      background: grey;
-      /* border-radius: 5px; */
-      /* box-shadow: 0px 10px 30px -5px rgb(0 0 0 / 30%); */
-      /* transition: box-shadow 0.5s, opacity 0.5s; */
-      will-change: transform;
-      /* border: 10px solid white; */
-      cursor: grab;
-      /* overflow: hidden; */
-      /* touch-action: none; */
-      /* background: url("./images/Group\ 236\(1\).png"); */
-      background-repeat: no-repeat;
+    width: 610px;
+    height: 690px;
+    background: grey;
+    will-change: transform;
+    cursor: grab;
+    background-repeat: no-repeat;
   }
-  
-  .card:hover {
-    /* box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4); */
-  }
-  
   .card > div {
     will-change: transform;
     height: 100%;
     margin: 0vw 0;
   }
-  
   .card > div > * {
     height: 100%;
     background-size: cover;
     background-position: center center;
     margin: 0vw 0;
   }
-  
-
   .chicken img{
     margin-top: -50px;
     width: 547px;
@@ -1044,22 +936,14 @@ input:focus::placeholder{
   .for-phones img{
     width: 587px;
   }
-  /* .image img {
-    display: none;
-    width: 625px;
-  } */
   .container {
-    /* width: 88%; */
     margin: auto;
-    /* margin-left: 9%; */
     overflow-x: clip;
     width: 1212px;
   }
   .container2 {
     width: 1261px;
     margin: auto;
-    /* margin-left: 7%; */
-    
   }
   .meal-planning {
     padding: 24px;
@@ -1076,7 +960,6 @@ input:focus::placeholder{
     font-weight: 400;
     line-height: 38px;
     margin-top: 29px;
-    /* margin:0px; */
     margin-left: 0px;
   }
   .meal-planning h6 {
@@ -1085,8 +968,7 @@ input:focus::placeholder{
     line-height: 30px;
     letter-spacing: 0em;
     margin-top: 38px;
-    margin-bottom: 26px;
-
+    margin-bottom: 6px;
   }
   .email1 input[type="text"] {
     border-bottom-left-radius: 25px;
@@ -1095,14 +977,14 @@ input:focus::placeholder{
     padding: 14px 31px;
     width: 62%;
     font-size: 15px;
-    margin-left: 24px;
+    /* margin-left: 24px; */
     outline: none;
   }
   .email1 button {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border: none;
-    padding: 14px 34px;
+    padding: 0px 38px;
     font-size: 15px;
     font-weight: 600;
     background: #35c680;
@@ -1145,15 +1027,9 @@ input:focus::placeholder{
     margin-top: 24px;
   }
   .chicken {
-    /* box-shadow: 0px 0px 19px 0px #6f6f6f1a; */
     text-align: center;
-   
-    
     border-radius: 20px;
-   
-    /* margin-top: -57px; */
     background: white;
-   
     margin: 0px 15px;
   }
   .frame-div {
@@ -1171,7 +1047,6 @@ input:focus::placeholder{
     justify-content: center;
     text-align: left;
     overflow-x: clip;
-    /* margin: 70px 43px; */
     margin-left:0px;
   }
   .meals h1 {
@@ -1187,7 +1062,6 @@ input:focus::placeholder{
   }
   .frame-div {
     gap: 106px;
-    /* margin-top: 127px; */
     margin: 0px;
   }
   .frame-div img {
@@ -1223,16 +1097,11 @@ input:focus::placeholder{
     margin-bottom: 150px;
   }
   .last-div {
-    background: radial-gradient(
-      151.95% 77.66% at 49.87% 77.66%,
-      #430d51 0%,
-      #2f0842 100%
-    );
-
+    background: radial-gradient( 151.95% 77.66% at 49.87% 77.66%, #430d51 0%, #2f0842 100% );
     text-align: center;
-    padding-top: 110px;
+    padding-top: 125px;
     color: white;
-    padding-bottom: 80px;
+    padding-bottom: 68px;
   }
   .last-div h1 {
     font-size: 26px;
@@ -1259,7 +1128,7 @@ input:focus::placeholder{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border: none;
-    padding: 14px 34px;
+    padding: 0px 38px;
     font-size: 15px;
     font-weight: 600;
     background: #35c680;
@@ -1271,9 +1140,10 @@ input:focus::placeholder{
     margin-top: 80px;
   }
   .last-div h2 {
-    font-weight: 500;
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 28px;
     margin-top: 17px;
+    letter-spacing: 2px;
   }
   .last-div h5 {
     font-size: 11px;
