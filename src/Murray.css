@@ -7,14 +7,16 @@
 html{
   scroll-behavior:smooth;
 }
-
+.container-for-body{
+  overflow-x: clip;
+}
 .last{
   text-align:center;
   cursor: pointer;
 }
 .carousel__container{
   height: auto;
-  margin-bottom: 65px;
+  margin-bottom: 110px;
 }
 .carousel .slider-wrapper.axis-horizontal .slider{
   height: 302px;
@@ -136,7 +138,7 @@ html{
 .meal-planning p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 38px;
+  line-height: 26px;
   margin-top: 7px;
   margin: 10px 30px 0px 19px;
 }
@@ -150,8 +152,8 @@ html{
 }
 .email1 {
   display: flex;
-  padding: 0 24px;
-  justify-content: start;
+  padding: 0 12px;
+  justify-content: center;
 }
 .email__error {
   text-align: center !important;
@@ -165,7 +167,7 @@ html{
   border-top-left-radius: 25px;
   border: none;
   padding: 11px 23px;
-  width: 43%;
+  width: 44%;
   font-size: 14px;
   /* margin-left: 0px; */
   outline: none;
@@ -204,7 +206,7 @@ input:focus::placeholder{
 .discover h3 {
   font-size: 22px;
   font-weight: 600;
-  line-height: 42px;
+  line-height: 30px;
   color: #2f0842;
 }
 .discover p {
@@ -212,6 +214,7 @@ input:focus::placeholder{
   font-weight: 400;
   color: #414141;
   margin-top: 12px;
+  line-height: 28px;
 }
 .chicken {
   box-shadow: none;
@@ -235,28 +238,32 @@ input:focus::placeholder{
 }
 .meals {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 26px;
-  text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 34px 0; */
+    padding: 0 20px;
+    text-align: center;
+    margin-top: 26px;
 }
 .meals h1 {
   font-size: 22px;
   font-weight: 600;
   color: #2f0842;
+  line-height:30px;
 }
 .meals p {
   font-size: 16px;
   font-weight: 400;
   color: #414141;
   margin-top: 20px;
+  line-height:28px;
 }
 .frame-div {
-  margin-top: 87px;
+  /* margin-top: 87px; */
   overflow-x: clip;
 }
 .frame-div2 {
-  margin-top: 87px;
+  /* margin-top: 87px; */
   overflow-x: clip;
 }
 .frame-div img {
@@ -283,10 +290,11 @@ input:focus::placeholder{
   color: #2f0842;
 }
 .contain p {
-  font-size: 18px;
-  font-weight: 400;
-  color: #9566a0;
-  margin-top: 17px;
+  font-size: 12px;
+    font-weight: 400;
+    color: #9566a0;
+    margin-top: 17px;
+    line-height: 18px;
 }
 .ellipses {
   width: 105px;
@@ -323,6 +331,7 @@ input:focus::placeholder{
 .email{
   display: flex;
   justify-content:center;
+  padding:0px 24px;
 }
 .email input[type="text"] {
   border-bottom-left-radius: 25px;
@@ -359,6 +368,38 @@ input:focus::placeholder{
   color: #a19393;
   margin-top: 26px;
 }
+@media screen and (max-width: 330px) {
+  .for-phones{
+    width:303px
+  }
+  .for-phones img {
+    width: 306px;
+   }
+   .email1{
+     padding:0px 0px;
+   }
+   .email{
+     padding: 0px 0px;
+   }
+  .chicken img{
+    width: 248px;
+  } 
+  .frame-div img{
+    width: 248px;
+  }
+  .frame-div2 img{
+    width: 248px;
+  }
+  .meal-planning h2{
+    font-size: 22px;
+  }
+  .logo h3{
+    font-size:21px;
+  }
+  .button-early button {
+   font-size: 13px;
+  }
+  }
 
 @media screen and (min-width: 357px) {
   .carousel .slider-wrapper.axis-horizontal .slider{
@@ -404,9 +445,13 @@ input:focus::placeholder{
   }
   .discover p{
     font-size:22px;
+    line-height:37px;
   }
   .contain h1{
     font-size:30px;
+  }
+  .contain p{
+    font-size:18px;
   }
   .button-early button{
     padding: 17px 45px;
@@ -516,6 +561,10 @@ input:focus::placeholder{
     background: #2F0842 !important;
     opacity: 1 !important;
     box-shadow: 0px 0px !important;
+  }
+  .email1{
+    justify-content:start;
+    padding:0px 24px;
   }
   .card {
     margin-right: 40px;
@@ -724,12 +773,14 @@ input:focus::placeholder{
     font-size: 25px;
     font-weight: 600;
     color: #2f0842;
+    line-height:42px;
   }
   .meals p {
     font-size: 22px;
     font-weight: 400;
     color: #414141;
     margin-top: 19px;
+    line-height:38px;
   }
   .frame-div {
     gap: 106px;

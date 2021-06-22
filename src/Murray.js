@@ -21,7 +21,7 @@ export default function Murray() {
     email1: "",
     email2: "",
   });
-  const {width,height}=useWindowSize
+  const {width,height}=useWindowSize()
   const [isError, setIsError] = useState({
     error1: false,
     error2: false,
@@ -173,11 +173,11 @@ export default function Murray() {
         <section>
           <div className="container">
             <div className="portion-div">
-              <div data-aos="fade-down" className="chicken">
+              <div data-aos={width > 1024 ? "fade-down" : "fade-left"} className="chicken">
                 <img src={card} />
               </div>
 
-              <div data-aos="fade-down" className="discover">
+              <div data-aos={width > 1024 ? "fade-down" : "fade-right"} className="discover">
                 <h3>Discover new favourites every week</h3>
                 <p>
                   Quickly swipe through weekly dish inspiration and simply ❤️ your fav’s, teaching Menuly what you love,
@@ -189,11 +189,11 @@ export default function Murray() {
         </section>
         <section>
           <div className="container">
-            <div data-aos="fade-down" className="frame-div">
+            <div data-aos={width > 1024 ? "fade-down" : "fade-left"} className="frame-div">
               <div>
                 <img src={frame2} />
               </div>
-              <div data-aos="fade-down" className="meals">
+              <div data-aos={width > 1024 ? "fade-down" : "fade-right"} className="meals">
                 <h1>Make meal plans in an instant</h1>
                 <p>
                   See the family favourites, drag & drop to create a weekly plan in seconds, then tap to share with your
@@ -206,11 +206,11 @@ export default function Murray() {
         <section>
           <div className="container">
             <div className="frame-div2">
-              <div data-aos="fade-down">
+              <div data-aos={width > 1024 ? "fade-down" : "fade-left"}>
                 <img src={frame1} />
               </div>
 
-              <div data-aos="fade-down" className="meals">
+              <div data-aos={width > 1024 ? "fade-down" : "fade-right"} className="meals">
                 <h1>Streamline dinner planning with your Helper</h1>
                 <p>
                   Menuly keeps track of family favourites, matches with what your helper can make, generates a meal plan
@@ -227,7 +227,7 @@ export default function Murray() {
             // infiniteLoop
             showIndicators={true}
             showStatus={false}
-            interval={100000}
+            interval={100000000}
             // showThumbs={true}
           >
             <div className="contain">
