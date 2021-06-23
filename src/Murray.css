@@ -156,22 +156,22 @@ html{
   justify-content: center;
 }
 .email__error {
-  border: 3px solid #ff0000a3 !important;
-    background: #d07b7bfa !important;
+  border: 3px solid #ee4e4e !important;
+    background: #ff8d8dfa !important;
     color:white;
 }
 .hide{
   display:none;
 }
-.tick-mark{
-  background: #35c680;
+.checkmark{
+  
   border-radius: 50%;
-  font-size: 27px;
-    padding: 23px;
+  width: 60px !important;
     margin-top: 22px;
+    height: 60px !important;
 }
 .regestering{
-  /* margin-top: 12px; */
+  margin-top: 12px;
   font-weight: 500;
   font-size: 19px;
 }
@@ -415,14 +415,18 @@ input:focus::placeholder{
   .button-early button {
    font-size: 13px;
   }
+  .checkmark{
+    width: 46px !important;
+    height: 46px !important;
+  }
   }
 
 @media screen and (min-width: 357px) {
-  .tick-mark{
-    background: #35c680;
+  .checkmark{
+   
     border-radius: 50%;
-    font-size: 25px;
-    padding: 29px;
+    width: 62px !important;
+    height: 62px !important;
     margin-top: 49px;
   }
   .regestering{
@@ -452,13 +456,17 @@ input:focus::placeholder{
   .email1 input[type="text"]{
     width: 37%;
   }
+  .checkmark{
+    width: 78px!important;
+    height: 78px!important;
+  }
 }
 @media screen and (min-width: 600px) {
-  .tick-mark{
-    background: #35c680;
+  .checkmark{
+ 
     border-radius: 50%;
-    font-size: 37px;
-    padding: 34px;
+    width:77px!important;
+   height:77px!important;
     margin-top: 49px;
   }
   .regestering{
@@ -552,6 +560,7 @@ input:focus::placeholder{
 .email input[type="text"]{
   width: 33%;
 }
+
 }
 @media screen and (min-width: 946px ){
   .chicken img{
@@ -571,11 +580,11 @@ input:focus::placeholder{
 .for-phones img {
   width: 654px;
 }
-.tick-mark{
-  background: #35c680;
+.checkmark{
+  
   border-radius: 50%;
-  font-size: 37px;
-  padding: 34px;
+  width: 90px!important;
+  height: 90px!important;
   margin-top: 49px;
 }
 }
@@ -632,6 +641,9 @@ input:focus::placeholder{
     background-size: cover;
     background-position: center center;
     margin: 0vw 0;
+  }
+  .checkmark{
+    margin-top: 0px;
   }
   .chicken img{
     margin-top: -50px;
@@ -693,7 +705,8 @@ input:focus::placeholder{
     display: flex;
     margin-top: 8%;
     color: white;
-    padding-bottom: 8%;
+    padding-bottom: 15%;
+
   }
   .for-phones{
     width: 100%;
@@ -735,12 +748,16 @@ input:focus::placeholder{
     margin-top: 38px;
     margin-bottom: 6px;
   }
-  .tick-mark{
-    font-size: 43px;
+  .checkmark{
+    width: 76px!important;
+    height: 76px!important;
   }
   .regestering{
   
     font-size: 25px;
+  }
+  .show{
+    margin-right: 53px;
   }
   .email1 input[type="text"] {
     border-bottom-left-radius: 25px;
@@ -952,15 +969,15 @@ input:focus::placeholder{
     opacity: 1 !important;
     box-shadow: 0px 0px !important;
   }
-  .tick-mark{
-    background: #35c680;
+  .checkmark{
+    
     border-radius: 50%;
-    font-size: 57px;
-      padding: 34px;
-    /* margin-top: 18px; */
+    margin-top: 28px;
+    width: 103px!important;
+    height: 103px!important;
   }
   .regestering{
-    /* margin-top: 12px; */
+    margin-top: 12px;
     font-weight: 500;
     font-size: 30px;
   }
@@ -1046,7 +1063,7 @@ input:focus::placeholder{
     display: flex;
     margin-top: 8%;
     color: white;
-    padding-bottom: 8%;
+    padding-bottom: 15%;
   }
   .for-phones{
     width: 100%;

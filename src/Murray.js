@@ -16,6 +16,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import Loader from "react-loader-spinner";
+import { Checkmark } from 'react-checkmark'
 export default function Murray() {
   const [userEmail, setUserEmail] = useState({
     email1: "",
@@ -141,10 +142,10 @@ export default function Murray() {
                           Tired of coming up with meal ideas every week? Menuly solves the “What’s for dinner?” problem
                           for families with helpers in one easy-to-use app.
                         </p>
-                        <h6 className={`${success.email1 ? "hide" : ""}`}>Register for early access before we launch</h6>
+                        <h6 className={`${success.email1 || success.email2 ? "hide" : ""}`}>Register for early access before we launch</h6>
                       </div>
                       
-                      <div  className={`${success.email1 ? "hide" : "email1"}`}>
+                      <div  className={`${success.email1 || success.email2 ? "hide" : "email1"}`}>
                         <input
                           type="text"
                           className={`${isError.error1 ? "email__error" : "enter"}`}
@@ -163,9 +164,9 @@ export default function Murray() {
                           )}
                         </button>
                       </div>
-                      <div className={`${success.email1 ? "show" : "hide"}`}>
-            <IoCheckmarkSharp className="tick-mark" />
-            <h3 className="regestering">Thank you for registering.</h3>
+                      <div className={`${success.email1 || success.email2 ? "show" : "hide"}`}>
+            <Checkmark color='#35c680' className="tick-mark" />
+            <h3 className="regestering">Thank you for registering</h3>
             </div>
                       {/* {isError.error1 && <p className="email__error">Enter valid email!</p>} */}
                     </div>
@@ -271,8 +272,8 @@ export default function Murray() {
         <section>
           <div className="last-div">
             <h1>Solve the “What's for dinner?” problem</h1>
-            <p className={`${success.email2 ? "hide" : ""}`}>Register below for early access</p>
-            <div className={`${success.email2 ? "hide" : "email"}`}>
+            <p className={`${success.email2 || success.email1 ? "hide" :  ""}`}>Register below for early access</p>
+            <div className={`${success.email2 || success.email1 ? "hide" : "email"}`}>
               <input
                 type="text"
                 className={`${isError.error2 ? "email__error" : "enter1"}`}
@@ -291,8 +292,8 @@ export default function Murray() {
                 )}
               </button>
             </div>
-            <div className={`${success.email2 ? "show" : "hide"}`}>
-            <IoCheckmarkSharp className="tick-mark" />
+            <div className={`${success.email2 || success.email1 ? "show1" : "hide"}`}>
+            <Checkmark color='#35c680' className="tick-mark" />
             <h3 className="regestering">Thank you for registering</h3>
             </div>
             
