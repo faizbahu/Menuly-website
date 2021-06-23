@@ -240,19 +240,19 @@ export default function Murray() {
               <h1>
                 “Menuly makes it incredibly fast and easy to plan a week of meals!”
               </h1>
-              <p>Aron A. - Stephanie</p>
+              <p>Stephanie</p>
             </div>
             <div className="contain">
               <h1>
                 “This app is a live-saver! Saves us hours every week.”
               </h1>
-              <p>Aron A. - Cassandra</p>
+              <p>Cassandra</p>
             </div>
             <div className="contain">
               <h1>
                 “I no longer hear “What’s for dinner?” - it’s all in the app for the family to see!”
               </h1>
-              <p>Aron A. - Ale</p>
+              <p>Ale</p>
             </div>
           </Carousel>
           </div>

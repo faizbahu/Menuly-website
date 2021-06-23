@@ -157,8 +157,8 @@ html{
 }
 .email__error {
   border: 3px solid #ee4e4e !important;
-    background: #ff8d8dfa !important;
-    color:white;
+    background: white !important;
+    color:#ee4e4e;
 }
 .hide{
   display:none;
