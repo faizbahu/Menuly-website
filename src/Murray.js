@@ -10,14 +10,16 @@ import phones from "./images/Group 236(1).png";
 import frame2 from "./images/Frame 2.png";
 import frame1 from "./images/Frame 1.png";
 import biglogo from "./images/biglogo.png";
+import menuly from "./images/MENULY.png";
 import card from "./images/card.png";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import Loader from "react-loader-spinner";
-import { Checkmark } from 'react-checkmark'
+import { Checkmark } from 'react-checkmark';
 export default function Murray() {
+ 
   const [userEmail, setUserEmail] = useState({
     email1: "",
     email2: "",
@@ -81,7 +83,8 @@ export default function Murray() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 900,
+      // easing: 'ease-in-sine',
     });
     AOS.refresh();
   }, []);
@@ -118,8 +121,8 @@ export default function Murray() {
             <div className="container">
               <div className="header-class">
                 <div className="logo">
-                  <img src={logo} />
-                  <h3>MENULY</h3>
+                  <img className="menulyu-logo" src={logo} />
+                  <img className="menuly" src={menuly}/>
                 </div>
                 <div className="button-early">
                   <a href={width > 1280 ? "#move" : "#input"}>
@@ -143,7 +146,7 @@ export default function Murray() {
                           for families with helpers in one easy-to-use app.
                         </p>
                         <h6 className={`${success.email1 || success.email2 ? "hide" : ""}`}>Register for early access before we launch</h6>
-                      </div>
+                      
                       
                       <div  className={`${success.email1 || success.email2 ? "hide" : "email1"}`}>
                         <input
@@ -164,6 +167,7 @@ export default function Murray() {
                           )}
                         </button>
                       </div>
+                      </div>
                       <div className={`${success.email1 || success.email2 ? "show" : "hide"}`}>
             <Checkmark color='#35c680' className="tick-mark" />
             <h3 className="regestering">Thank you for registering</h3>
@@ -179,11 +183,11 @@ export default function Murray() {
         <section>
           <div className="container">
             <div className="portion-div">
-              <div data-aos={width > 1024 ? "fade-down" : "fade-left"} className="chicken">
+              <div data-aos={width > 1024 ? "fade-down" : "fade-down"} className="chicken">
                 <img src={card} />
               </div>
 
-              <div data-aos={width > 1024 ? "fade-down" : "fade-right"} className="discover">
+              <div data-aos={width > 1024 ? "fade-down" : "fade-down"} className="discover">
                 <h3>Discover new favourites every week</h3>
                 <p>
                   Quickly swipe through weekly dish inspiration and simply ❤️ your fav’s, teaching Menuly what you love,
@@ -195,11 +199,11 @@ export default function Murray() {
         </section>
         <section>
           <div className="container">
-            <div data-aos={width > 1024 ? "fade-down" : "fade-left"} className="frame-div">
+            <div data-aos={width > 1024 ? "fade-down" : "fade-down"} className="frame-div">
               <div>
                 <img src={frame2} />
               </div>
-              <div data-aos={width > 1024 ? "fade-down" : "fade-right"} className="meals">
+              <div data-aos={width > 1024 ? "fade-down" : "fade-down"} className="meals">
                 <h1>Make meal plans in an instant</h1>
                 <p>
                   See the family favourites, drag & drop to create a weekly plan in seconds, then tap to share with your
@@ -212,11 +216,11 @@ export default function Murray() {
         <section>
           <div className="container">
             <div className="frame-div2">
-              <div data-aos={width > 1024 ? "fade-down" : "fade-left"}>
+              <div data-aos={width > 1024 ? "fade-down" : "fade-down"}>
                 <img src={frame1} />
               </div>
 
-              <div data-aos={width > 1024 ? "fade-down" : "fade-right"} className="meals">
+              <div data-aos={width > 1024 ? "fade-down" : "fade-down"} className="meals">
                 <h1>Streamline dinner planning with your Helper</h1>
                 <p>
                   Menuly keeps track of family favourites, matches with what your helper can make, generates a meal plan
@@ -233,7 +237,11 @@ export default function Murray() {
             // infiniteLoop
             showIndicators={true}
             showStatus={false}
-            interval={100000000}
+            interval={4000}
+            autoPlay={true}
+            infiniteLoop={true}
+            preventMovementUntilSwipeScrollTolerance={false}
+            stopOnHover={false}
             // showThumbs={true}
           >
             <div className="contain">
@@ -256,18 +264,6 @@ export default function Murray() {
             </div>
           </Carousel>
           </div>
-          {/* <div className="contain">
-            <h1>
-              “Menuly has changed my life and made meal planning a breeze in my
-              household! I highly recommend this app to anyone.”
-            </h1>
-            <p>Aron A. - Beta user</p>
-            <div className="ellipses">
-              <img src={ellipse1} />
-              <img src={ellipse2} />
-              <img src={ellipse2} />
-            </div>
-          </div> */}
         </section>
         <section>
           <div className="last-div">
@@ -294,12 +290,14 @@ export default function Murray() {
             </div>
             <div className={`${success.email2 || success.email1 ? "show1" : "hide"}`}>
             <Checkmark color='#35c680' className="tick-mark" />
+            
             <h3 className="regestering">Thank you for registering</h3>
             </div>
             
             {/* {isError.error2 && <p className="email__error">Enter valid email!</p>} */}
-            <img src={biglogo} />
-            <h2>MENULY</h2>
+            <div className="for-images">
+            <img className="big-logo" src={biglogo} />
+            <img className="menuly1" src={menuly}/></div>
             <h5>Copyright © 2021 HYPR Digital Pte Ltd. All rights reserved.</h5>
           </div>
         </section>

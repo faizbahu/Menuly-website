@@ -65,7 +65,7 @@ html{
   align-items: center;
   gap: 18px;
 }
-.logo img {
+.menuly-logo{
   height: 49.486725px;
   width: 46.946903px;
 }
@@ -79,20 +79,20 @@ html{
   align-items: center;
 }
 .button-early button {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 16px;
   background: #ee4e4e;
   border: none;
   color: white;
   border-radius: 30px;
-  padding: 12px 9px;
+  padding: 12px 16px;
   cursor: pointer;
 }
 .phones-aimation {
   margin-top: 8%;
   color: white;
-  padding-bottom: 8%;
+  padding-bottom: 20%;
 }
 .card {
   display: none;
@@ -212,7 +212,7 @@ input:focus::placeholder{
 .portion-div {
   gap: 86px;
   overflow-x: clip;
-  margin: 0px 30px;
+  margin: 0px 16px;
 }
 .discover {
   margin-top: 26px;
@@ -220,7 +220,7 @@ input:focus::placeholder{
   margin-bottom: 0px;
 }
 .discover h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   color: #2f0842;
@@ -237,13 +237,14 @@ input:focus::placeholder{
   background: white;
   display: flex;
    justify-content: center;
+   margin-top: 92px;
     
 }
 .chicken img{
   box-shadow: 0px 0px 19px 0px #6f6f6f1a;
-  width: 287px;
+  width: 277px;
   border-radius: 20px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   margin-bottom: 0px;
 }
 .frame-div {
@@ -257,12 +258,12 @@ input:focus::placeholder{
     flex-direction: column;
     justify-content: center;
     /* margin: 34px 0; */
-    padding: 0 20px;
+    padding: 0 16px;
     text-align: center;
     margin-top: 26px;
 }
 .meals h1 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   color: #2f0842;
   line-height:30px;
@@ -285,13 +286,13 @@ input:focus::placeholder{
 .frame-div img {
   box-shadow: 0px 0px 16px 0px #6f6f6f1a;
   border-radius: 20px;
-  width: 287px;
+  width: 277px;
     margin-top: 90px;
 }
 .frame-div2 img {
   box-shadow: 0px 0px 16px 0px #6f6f6f1a;
   border-radius: 20px;
-  width: 287px;
+  width: 277px;
   margin-top: 90px; 
 }
 .contain {
@@ -347,7 +348,7 @@ input:focus::placeholder{
 .email{
   display: flex;
   justify-content:center;
-  padding:0px 24px;
+  /* padding:0px 24px; */
 }
 .email input[type="text"] {
   border-bottom-left-radius: 25px;
@@ -369,7 +370,7 @@ input:focus::placeholder{
   color: white;
   cursor: pointer;
 }
-.last-div img {
+.big-logo {
   width: 86px;
   margin-top: 60px;
 }
@@ -384,7 +385,26 @@ input:focus::placeholder{
   color: #a19393;
   margin-top: 26px;
 }
-@media screen and (max-width: 330px) {
+.for-images{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuly1{
+  margin-top: 13px;
+}
+/* @media screen and (min-width: 320px) {
+  .chicken img{
+    width: 277px;
+  }
+  .frame-div{
+    width: 277px;
+  }
+  .frame-div2{
+    width: 277px;
+  }
+}   */
+@media screen and (min-width: 354px) {
   .for-phones{
     width:303px
   }
@@ -397,14 +417,17 @@ input:focus::placeholder{
    .email{
      padding: 0px 0px;
    }
+   .menuly{
+     width: 90px;
+   }
   .chicken img{
-    width: 248px;
+    width: 302px;
   } 
   .frame-div img{
-    width: 248px;
+    width: 302px;
   }
   .frame-div2 img{
-    width: 248px;
+    width: 302px;
   }
   .meal-planning h2{
     font-size: 22px;
@@ -413,13 +436,15 @@ input:focus::placeholder{
     font-size:21px;
   }
   .button-early button {
-   font-size: 13px;
+   font-size: 10px;
+   padding: 8px 16px;
   }
   .checkmark{
     width: 46px !important;
     height: 46px !important;
   }
   }
+  
 
 @media screen and (min-width: 357px) {
   .checkmark{
@@ -436,15 +461,36 @@ input:focus::placeholder{
     height: 281px;
   }
   .frame-div{
-    margin: 0px 30px;
+    margin: 0px 16px;
   }
   .frame-div2{
-    margin: 0px 30px;
+    margin: 0px 16px;
   }
+  .meals{
+    padding:0px;
+  }
+  .meals h1{
+    font-size:21px;
+  }
+  .discover h3{
+    font-size:21px;
+  }
+  /* .portion-div {
+    padding:0px 16px;
+  } */
 }
 @media screen and (min-width:411px){
   .email1 input[type="text"]{
     width: 52%;
+  }
+  .chicken img{
+    width: 342px;
+  }
+  .frame-div img{
+    width: 342px;
+  }
+  .frame-div2 img{
+    width: 342px;
   }
 }
 @media screen and (min-width:470px){
@@ -463,7 +509,6 @@ input:focus::placeholder{
 }
 @media screen and (min-width: 600px) {
   .checkmark{
- 
     border-radius: 50%;
     width:77px!important;
    height:77px!important;
@@ -499,6 +544,7 @@ input:focus::placeholder{
   }
   .button-early button{
     padding: 17px 45px;
+    font-size: 15px;
   }
   .for-phones{
     width: 483px;
@@ -506,7 +552,10 @@ input:focus::placeholder{
   .for-phones img{
     width: 474px;
   }
-  .logo img{
+  .menuly{
+    width:115px;
+  }
+  .menuly-logo{
     width: 61px;
     height: 65px;
   }
@@ -535,6 +584,9 @@ input:focus::placeholder{
   }
   .last-div h5 {
     font-size: 11px;
+  }
+  .menuly1{
+    margin-top: 17px;
   }
 }
 @media screen and (min-width: 885px ){
@@ -618,7 +670,7 @@ input:focus::placeholder{
   }
   .email1{
     justify-content:start;
-    padding:0px 24px;
+    padding-left:24px;
   }
   .card {
     margin-right: 40px;
@@ -643,10 +695,11 @@ input:focus::placeholder{
     margin: 0vw 0;
   }
   .checkmark{
-    margin-top: 0px;
+    margin-top: 26px;
   }
+
   .chicken img{
-    margin-top: -50px;
+    /* margin-top: -50px; */
     width: 484px;
   }
   .frame-div img{
@@ -678,7 +731,7 @@ input:focus::placeholder{
     align-items: center;
     gap: 18px;
   }
-  .logo img {
+  .menuly-logo{
     height: 65.48672485351562px;
     width: 61.946903228759766px;
   }
@@ -724,21 +777,24 @@ input:focus::placeholder{
     margin: auto;
   }
   .meal-planning {
-    padding: 24px;
+    margin-left: 80px;
     text-align: left;
+    padding: 0px;
   }
   .meal-planning h2 {
-    font-size: 27px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 55px;
     margin-top: 0px;
   }
   .meal-planning p {
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 38px;
     margin-top: 29px;
     margin-left: 0px;
+    margin: 0px;
+    margin-top: 29px;
   }
   .meal-planning h6 {
     font-size: 20px;
@@ -757,13 +813,13 @@ input:focus::placeholder{
     font-size: 25px;
   }
   .show{
-    margin-right: 53px;
+    /* margin-right: 53px; */
   }
   .email1 input[type="text"] {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     border:3px solid white;
-    padding: 14px 31px;
+    padding: 11px 31px;
     width: 62%;
     font-size: 15px;
     outline: none;
@@ -791,6 +847,7 @@ input:focus::placeholder{
   }
   .show{
     /* margin-top: 16px; */
+    margin-left: 70px;
   }
   .portion-div {
     display: flex;
@@ -823,6 +880,7 @@ input:focus::placeholder{
     border-radius: 20px;
     background: white;
     margin: 0px 15px;
+    margin-top: 88px;
   }
   .frame-div {
     display: flex;
@@ -853,6 +911,12 @@ input:focus::placeholder{
     color: #414141;
     margin-top: 19px;
     line-height:38px;
+  }
+  .email1{
+    text-align:left;
+    padding: 0px;
+    padding-left: 0px;
+    margin-top: 26px;
   }
   .frame-div {
     gap: 106px;
@@ -918,7 +982,7 @@ input:focus::placeholder{
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     border:3px solid white;
-    padding: 14px 31px;
+    padding: 11px 31px;
     font-size: 15px;
     outline: none;
   }
@@ -933,7 +997,7 @@ input:focus::placeholder{
     color: white;
     cursor: pointer;
   }
-  .last-div img {
+  .big-logo  {
     width: 86px;
     margin-top: 80px;
   }
@@ -972,7 +1036,7 @@ input:focus::placeholder{
   .checkmark{
     
     border-radius: 50%;
-    margin-top: 28px;
+    margin-top: 42px;
     width: 103px!important;
     height: 103px!important;
   }
@@ -1003,8 +1067,9 @@ input:focus::placeholder{
     background-position: center center;
     margin: 0vw 0;
   }
+ 
   .chicken img{
-    margin-top: -50px;
+    /* margin-top: -50px; */
     width: 547px;
   }
   .frame-div img{
@@ -1036,7 +1101,7 @@ input:focus::placeholder{
     align-items: center;
     gap: 18px;
   }
-  .logo img {
+  .menuly-logo {
     height: 65.48672485351562px;
     width: 61.946903228759766px;
   }
@@ -1063,7 +1128,7 @@ input:focus::placeholder{
     display: flex;
     margin-top: 8%;
     color: white;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
   }
   .for-phones{
     width: 100%;
@@ -1081,8 +1146,10 @@ input:focus::placeholder{
     margin: auto;
   }
   .meal-planning {
-    padding: 24px;
+    margin-left: 80px;
     text-align: left;
+    padding: 0px;
+    margin-top: 48px;
   }
   .meal-planning h2 {
     font-size: 40px;
@@ -1096,6 +1163,8 @@ input:focus::placeholder{
     line-height: 38px;
     margin-top: 29px;
     margin-left: 0px;
+    margin: 0px;
+    margin-top: 29px;
   }
   .meal-planning h6 {
     font-size: 20px;
@@ -1108,7 +1177,7 @@ input:focus::placeholder{
   .email1 input[type="text"] {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    padding: 14px 31px;
+    padding: 11px 31px;
     width: 62%;
     font-size: 15px;
     border: 3px solid white ;
@@ -1119,7 +1188,7 @@ input:focus::placeholder{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border: none;
-    padding: 0px 38px;
+    padding: 0px 39px;
     font-size: 15px;
     font-weight: 600;
     background: #35c680;
@@ -1128,6 +1197,9 @@ input:focus::placeholder{
   }
   .email1{
     text-align:left;
+    padding: 0px;
+    padding-left: 0px;
+    margin-top: 26px;
   }
   .padding-first {
     /* display: flex; */
@@ -1166,6 +1238,7 @@ input:focus::placeholder{
     border-radius: 20px;
     background: white;
     margin: 0px 15px;
+    margin-top: 88px;
   }
   .frame-div {
     display: flex;
@@ -1255,7 +1328,7 @@ input:focus::placeholder{
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     border:3px solid white;
-    padding: 14px 31px;
+    padding: 11px 31px;
     font-size: 15px;
     outline: none;
   }
@@ -1270,7 +1343,7 @@ input:focus::placeholder{
     color: white;
     cursor: pointer;
   }
-  .last-div img {
+  .big-logo {
     width: 86px;
     margin-top: 80px;
   }
